@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(img == negocis)
         {
-            Intent intent = new Intent(this, negocis.class);
+            Intent intent = new Intent(this, Negocis.class);
             startActivity(intent);
         }
         else if(img == restaurants)
