@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     ImageView negocis, restaurants, cartellera, temps;
@@ -19,6 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         restaurants = findViewById(R.id.restaurants);
         cartellera = findViewById(R.id.cartellera);
         temps = findViewById(R.id.temps);
+
+        negocis.setOnClickListener(this);
+        restaurants.setOnClickListener(this);
+        cartellera.setOnClickListener(this);
+        temps.setOnClickListener(this);
     }
 
     @Override
@@ -32,18 +39,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(img == restaurants)
         {
-            Intent intent = new Intent(this, restaurantes.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(this, restaurantes.class);
+            startActivity(intent2);
         }
         else if(img == cartellera)
         {
-            Intent intent = new Intent(this, cartelera.class);
-            startActivity(intent);
+            Intent intent3 = new Intent(this, cartelera.class);
+            startActivity(intent3);
         }
         else if(img == temps)
         {
-            Intent intent = new Intent(this, temps.class);
-            startActivity(intent);
+            Intent intent4 = new Intent(this, temps.class);
+            startActivity(intent4);
         }
 
 
