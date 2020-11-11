@@ -47,9 +47,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="https://elcellerdejabugo.com/"
+                android:textColor="@color/negro"
+                android:textSize="15dp"
+                android:text="TELÉFONO: 93 870 96 00"
+                android:fontFamily="serif-monospace"
                 ></TextView>
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estrellajabugo"
+                ></ImageView>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
