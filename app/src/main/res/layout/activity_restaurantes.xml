@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,56 +8,120 @@
     android:background="@color/fondo"
     tools:context=".restaurantes">
 
-    <androidx.cardview.widget.CardView
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp"
+        android:rowCount="3"
+        android:columnCount="1"
         >
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_column="0"
+            android:layout_row="0"
             >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="275dp"
-                android:src="@drawable/jabugo">
-            </ImageView>
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="El Celler de Jabugo"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/negro"
-                android:background="@color/url"
-                app:cardCornerRadius="15dp"
-                android:fontFamily="serif-monospace"
-                android:gravity="center"
-                android:id="@+id/url"
-                ></TextView>
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="https://elcellerdejabugo.com/"
-            ></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/negro"
-                android:textSize="15dp"
-                android:text="TELÉFONO: 93 870 96 00"
-                android:fontFamily="serif-monospace"
-                ></TextView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/estrellajabugo"
-                ></ImageView>
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:src="@drawable/jabugo">
+                </ImageView>
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El Celler de Jabugo"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:background="@color/url"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:id="@+id/url"
+                    ></TextView>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://elcellerdejabugo.com/"
+                ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:textSize="15dp"
+                    android:text="TELÉFONO: 93 870 96 00"
+                    android:fontFamily="serif-monospace"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/estrellajabugo"
+                    ></ImageView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:src="@drawable/jabugo">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El Celler de Jabugo"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:background="@color/url"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:id="@+id/url"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://elcellerdejabugo.com/"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:textSize="15dp"
+                    android:text="TELÉFONO: 93 870 96 00"
+                    android:fontFamily="serif-monospace"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/estrellajabugo"
+                    ></ImageView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</ScrollView>
