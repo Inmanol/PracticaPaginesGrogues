@@ -10,6 +10,7 @@
 
     <GridLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:rowCount="3"
         android:columnCount="1"
         >
@@ -19,8 +20,8 @@
             android:layout_margin="25dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
-            android:layout_column="0"
             android:layout_row="0"
+            android:layout_column="0"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +45,7 @@
                     android:background="@color/url"
                     android:fontFamily="serif-monospace"
                     android:gravity="center"
-                    android:id="@+id/url"
+                    android:id="@+id/url1"
                     ></TextView>
                 <TextView
                 android:layout_width="wrap_content"
@@ -58,6 +59,7 @@
                     android:textSize="15dp"
                     android:text="TELÉFONO: 93 870 96 00"
                     android:fontFamily="serif-monospace"
+                    android:id="@+id/telf1"
                     ></TextView>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -86,38 +88,95 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="275dp"
-                    android:src="@drawable/jabugo">
+                    android:src="@drawable/focs">
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="El Celler de Jabugo"
+                    android:text="3 focs"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/negro"
                     android:background="@color/url"
                     android:fontFamily="serif-monospace"
                     android:gravity="center"
-                    android:id="@+id/url"
+                    android:id="@+id/url2"
                     ></TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="https://elcellerdejabugo.com/"
+                    android:text="https://www.3focs.com/"
                     ></TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/negro"
                     android:textSize="15dp"
-                    android:text="TELÉFONO: 93 870 96 00"
+                    android:text="TELÉFONO: 931 16 49 97"
                     android:fontFamily="serif-monospace"
+                    android:id="@+id/telf2"
                     ></TextView>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/estrellajabugo"
+                    android:src="@drawable/estrellafocs"
+                    ></ImageView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:src="@drawable/canxurrades">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Can Xurrades"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:background="@color/url"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:id="@+id/url3"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.canxurrades.com/"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:textSize="15dp"
+                    android:text="TELÉFONO: 932 18 73 70"
+                    android:fontFamily="serif-monospace"
+                    android:id="@+id/telf3"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/estrellacan"
                     ></ImageView>
 
             </LinearLayout>
