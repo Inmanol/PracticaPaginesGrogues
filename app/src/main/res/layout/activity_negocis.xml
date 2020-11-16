@@ -1,9 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
     tools:context=".Negocis">
 
-</LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:src="@drawable/aduho">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aduho Granollers"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:background="@color/url"
+                android:fontFamily="serif-monospace"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                android:id="@+id/negocis1"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://aduho.com/"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:textSize="15dp"
+                android:text="TELÉFONO: 938 70 14 87"
+                android:fontFamily="serif-monospace"
+                ></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estrellaaduho"
+                ></ImageView>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:src="@drawable/urban">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="URBAN BEAUTY PELUQUERIA"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:background="@color/url"
+                android:fontFamily="serif-monospace"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                android:id="@+id/negocis2"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.ubpeluqueriagranollers.shop/"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:textSize="15dp"
+                android:text="TELÉFONO: 938 79 31 75"
+                android:fontFamily="serif-monospace"
+                ></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estrellaurban"
+                ></ImageView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_column="0"
+        android:layout_row="2"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/activitygranollers">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity GRANOLLERS"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            android:background="@color/url"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="15sp"
+            android:gravity="center"
+            android:id="@+id/negocis3"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://activity.cat/salones/"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:text="TELÉFONO: 938 60 60 44"
+            android:fontFamily="serif-monospace"
+            ></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/estrellaactivity"
+            ></ImageView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</ScrollView>
