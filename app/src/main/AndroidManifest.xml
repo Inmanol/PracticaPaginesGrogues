@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".temps"></activity>
+        <activity android:name=".restauranteCarne"></activity>
+        <activity android:name=".temps" />
         <activity android:name=".cartelera" />
         <activity android:name=".restaurantes" />
         <activity android:name=".Negocis" />
