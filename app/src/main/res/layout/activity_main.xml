@@ -28,6 +28,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="15dp"
+            android:background="@color/blanco"
             >
             <LinearLayout
                 android:layout_width="wrap_content"

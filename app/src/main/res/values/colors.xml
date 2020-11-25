@@ -7,4 +7,6 @@
     <color name="fondo">#D8D8D8</color>
     <color name="url">#B703A9F4</color>
     <color name="buttontop">#00000000</color>
+    <color name="telf">#4CAF50</color>
+    <color name="blanco">#FFFFFF</color>
 </resources>

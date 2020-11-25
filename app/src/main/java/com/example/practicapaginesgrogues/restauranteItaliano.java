@@ -6,20 +6,18 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class restauranteCarne extends AppCompatActivity implements View.OnClickListener {
+public class restauranteItaliano extends AppCompatActivity implements View.OnClickListener {
     ImageView telf1,telf2,telf3,url1,url2,url3;
     FloatingActionButton top;
     View scrollView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurante_carne);
+        setContentView(R.layout.activity_restaurante_italiano);
 
         url1 = findViewById(R.id.url1);
         url1.setOnClickListener(this);
@@ -48,40 +46,39 @@ public class restauranteCarne extends AppCompatActivity implements View.OnClickL
         }
         else if (img == url1)
         {
-            String url = "https://elcellerdejabugo.com/";
+            String url = "https://www.pizzerialanostraisola.es/es/";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
         }
         else if(img == url2)
         {
-            String url = "https://www.3focs.com/";
+            String url = "https://il-colosseocerdanyola.metro.rest/?lang=es#menu";
             Intent i2 = new Intent(Intent.ACTION_VIEW);
             i2.setData(Uri.parse(url));
             startActivity(i2);
         }
         else if(img == url3)
         {
-            String url = "https://www.canxurrades.com/";
+            String url = "https://www.galubcn.com/";
             Intent i3 = new Intent(Intent.ACTION_VIEW);
             i3.setData(Uri.parse(url));
             startActivity(i3);
         }
         else if(img == telf1)
         {
-            Intent i11 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 93 870 96 00"));
+            Intent i11 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 935 64 39 93"));
             startActivity(i11);
         }
         else if(img == telf2)
         {
-            Intent i21 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 931 16 49 97"));
+            Intent i21 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 930 27 31 17"));
             startActivity(i21);
         }
         else if(img == telf3)
         {
-            Intent i31 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 932 18 73 70"));
+            Intent i31 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 931 15 02 75"));
             startActivity(i31);
         }
-
     }
 }

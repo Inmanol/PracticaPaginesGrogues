@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".restauranteCarne"></activity>
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".restauranteJapo"></activity>
+        <activity android:name=".restauranteMarisco" />
+        <activity android:name=".restauranteItaliano" />
+        <activity android:name=".restauranteCarne" />
         <activity android:name=".temps" />
         <activity android:name=".cartelera" />
         <activity android:name=".restaurantes" />

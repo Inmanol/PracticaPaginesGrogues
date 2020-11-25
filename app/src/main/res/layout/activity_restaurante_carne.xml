@@ -32,7 +32,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp"
                 android:layout_row="0"
@@ -57,30 +57,44 @@
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/negro"
-                        android:background="@color/url"
-                        android:fontFamily="serif-monospace"
+                        android:fontFamily="casual"
                         android:gravity="center"
-                        android:id="@+id/url1"
                         ></TextView>
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="https://elcellerdejabugo.com/"
-                        ></TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/negro"
-                        android:textSize="15dp"
-                        android:text="TELÉFONO: 93 870 96 00"
-                        android:fontFamily="serif-monospace"
-                        android:id="@+id/telf1"
-                        ></TextView>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/estrellajabugo"
-                        ></ImageView>
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal|right"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/web"
+                            android:id="@+id/url1"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ubicacion"
+                            android:id="@+id/ubiJabugo"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/telefono"
+                            android:background="@color/telf"
+                            android:id="@+id/telf1"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/estrellajabugo"
+                            android:layout_gravity="center|center_horizontal"
+                            ></ImageView>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -88,7 +102,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp"
                 android:layout_column="0"
@@ -113,38 +127,51 @@
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/negro"
-                        android:background="@color/url"
-                        android:fontFamily="serif-monospace"
+                        android:fontFamily="casual"
                         android:gravity="center"
-                        android:id="@+id/url2"
                         ></TextView>
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="https://www.3focs.com/"
-                        ></TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/negro"
-                        android:textSize="15dp"
-                        android:text="TELÉFONO: 931 16 49 97"
-                        android:fontFamily="serif-monospace"
-                        android:id="@+id/telf2"
-                        ></TextView>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/estrellafocs"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/web"
+                            android:id="@+id/url2"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ubicacion"
+                            android:id="@+id/ubiFocs"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/telefono"
+                            android:background="@color/telf"
+                            android:id="@+id/telf2"
+                            android:layout_marginRight="15dp"
                         ></ImageView>
-
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/estrellafocs"
+                            android:layout_gravity="center|center_horizontal"
+                            ></ImageView>
+                    </LinearLayout>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp"
                 android:layout_column="0"
@@ -169,33 +196,45 @@
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/negro"
-                        android:background="@color/url"
-                        android:fontFamily="serif-monospace"
+                        android:fontFamily="casual"
                         android:gravity="center"
-                        android:id="@+id/url3"
                         ></TextView>
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="https://www.canxurrades.com/"
-                        ></TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/negro"
-                        android:textSize="15dp"
-                        android:text="TELÉFONO: 932 18 73 70"
-                        android:fontFamily="serif-monospace"
-                        android:id="@+id/telf3"
-                        ></TextView>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/estrellacan"
-                        ></ImageView>
-
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/web"
+                            android:id="@+id/url3"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ubicacion"
+                            android:id="@+id/ubiCanxu"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/telefono"
+                            android:background="@color/telf"
+                            android:id="@+id/telf3"
+                            android:layout_marginRight="15dp"
+                            ></ImageView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/estrellacan"
+                            android:layout_gravity="center|center_horizontal"
+                            ></ImageView>
+                    </LinearLayout>
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
         </GridLayout>

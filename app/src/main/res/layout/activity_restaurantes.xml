@@ -8,6 +8,18 @@
     android:background="@color/fondo"
     tools:context=".restaurantes">
 
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="RESTAURANTES"
+        android:background="@color/fondo"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,14 +38,36 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 >
-                <TextView
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="hola"
+                    android:text="Restaurantes especializados en la carne"
                     android:id="@+id/rCarn"
                     >
-                </TextView>
+                </Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Restaurantes italianos"
+                    android:id="@+id/rItaliano"
+                    >
+                </Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Restaurantes especializados en el marisco"
+                    android:id="@+id/rMarisco"
+                    >
+                </Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Restaurantes japoneses"
+                    android:id="@+id/rJapo"
+                    >
+                </Button>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
