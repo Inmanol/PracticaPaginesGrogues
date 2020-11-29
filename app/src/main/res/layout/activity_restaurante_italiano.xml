@@ -77,7 +77,7 @@ tools:context=".restauranteItaliano">
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ubicacion"
-                        android:id="@+id/ubiJabugo"
+                        android:id="@+id/ubi1"
                         android:layout_marginRight="15dp"
                         ></ImageView>
                     <ImageView
@@ -147,7 +147,7 @@ tools:context=".restauranteItaliano">
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ubicacion"
-                        android:id="@+id/ubiFocs"
+                        android:id="@+id/ubi2"
                         android:layout_marginRight="15dp"
                         ></ImageView>
                     <ImageView
@@ -216,7 +216,7 @@ tools:context=".restauranteItaliano">
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ubicacion"
-                        android:id="@+id/ubiCanxu"
+                        android:id="@+id/ubi3"
                         android:layout_marginRight="15dp"
                         ></ImageView>
                     <ImageView

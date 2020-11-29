@@ -4,13 +4,72 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/fondo"
 tools:context=".cartelera">
 
-
-<TextView
-    android:layout_width="wrap_content"
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="HOLA"
-    android:textSize="100dp"
-    ></TextView>
+    app:title="CARTELERA"
+    android:background="@color/fondo"
+    android:elevation="5dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    />
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:rowCount="3"
+    android:columnCount="1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Películas de acción"
+                android:id="@+id/cAccion"
+                >
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Películas de terror"
+                android:id="@+id/cTerror"
+                >
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Películas de comedia"
+                android:id="@+id/cComedia"
+                >
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Películas de ciencia ficción"
+                android:id="@+id/cCienciaFiccion"
+                >
+            </Button>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</GridLayout>
 </LinearLayout>

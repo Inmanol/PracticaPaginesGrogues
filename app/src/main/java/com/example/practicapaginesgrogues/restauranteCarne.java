@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class restauranteCarne extends AppCompatActivity implements View.OnClickListener {
-    ImageView telf1,telf2,telf3,url1,url2,url3;
+    ImageView telf1,telf2,telf3,url1,url2,url3,ubi1,ubi2,ubi3;
     FloatingActionButton top;
     View scrollView;
     @Override
@@ -33,6 +33,12 @@ public class restauranteCarne extends AppCompatActivity implements View.OnClickL
         telf2.setOnClickListener(this);
         telf3 = findViewById(R.id.telf3);
         telf3.setOnClickListener(this);
+        ubi1 = findViewById(R.id.ubi1);
+        ubi1.setOnClickListener(this);
+        ubi2 = findViewById(R.id.ubi2);
+        ubi2.setOnClickListener(this);
+        ubi3 = findViewById(R.id.ubi3);
+        ubi3.setOnClickListener(this);
         top = findViewById(R.id.top);
         top.setOnClickListener(this);
     }
@@ -81,6 +87,27 @@ public class restauranteCarne extends AppCompatActivity implements View.OnClickL
         {
             Intent i31 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 932 18 73 70"));
             startActivity(i31);
+        }
+        else if(img == ubi1)
+        {
+            String url = "https://goo.gl/maps/vRCnUtApgumfkPfr9";
+            Intent i12 = new Intent(Intent.ACTION_VIEW);
+            i12.setData(Uri.parse(url));
+            startActivity(i12);
+        }
+        else if(img == ubi2)
+        {
+            String url = "https://goo.gl/maps/Jxobbch6TLU2hsxp7";
+            Intent i22 = new Intent(Intent.ACTION_VIEW);
+            i22.setData(Uri.parse(url));
+            startActivity(i22);
+        }
+        else if(img == ubi3)
+        {
+            String url = "https://g.page/canxurrades?share";
+            Intent i32 = new Intent(Intent.ACTION_VIEW);
+            i32.setData(Uri.parse(url));
+            startActivity(i32);
         }
 
     }

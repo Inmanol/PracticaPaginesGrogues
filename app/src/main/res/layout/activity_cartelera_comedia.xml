@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@color/fondo"
-tools:context=".restauranteMarisco">
+tools:context=".carteleraComedia">
 
 <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:layout_width="wrap_content"
@@ -47,13 +47,14 @@ tools:context=".restauranteMarisco">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="275dp"
-                    android:src="@drawable/botafumeiro">
+                    android:src="@drawable/elgranstan"
+                    android:id="@+id/peli1">
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Botafumeiro"
+                    android:text="El gran Stan"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/negro"
@@ -61,39 +62,24 @@ tools:context=".restauranteMarisco">
                     android:gravity="center"
                     ></TextView>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_gravity="center_horizontal|right"
                     >
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/web"
-                        android:id="@+id/url1"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/ubicacion"
-                        android:id="@+id/ubi1"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/telefono"
-                        android:background="@color/telf"
-                        android:id="@+id/telf1"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="150dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/estrellabotafumeiro"
-                        android:layout_gravity="center|center_horizontal"
+                        android:src="@drawable/tiempostan"
                         ></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cuando un estafador se entera de que va a ir a la cárcel, este contrata a un gurú de las artes marciales para que le entrene y así poder defenderse a una vez entre rejas."
+                        android:textSize="17dp"
+                        android:textColor="@color/negro"
+                        ></TextView>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -117,13 +103,14 @@ tools:context=".restauranteMarisco">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="275dp"
-                    android:src="@drawable/gambeta">
+                    android:src="@drawable/voces"
+                    android:id="@+id/peli2">
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="La Gambeta"
+                    android:text="Voces"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/negro"
@@ -131,40 +118,26 @@ tools:context=".restauranteMarisco">
                     android:gravity="center"
                     ></TextView>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|right"
                     >
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/web"
-                        android:id="@+id/url2"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/ubicacion"
-                        android:id="@+id/ubi2"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/telefono"
-                        android:background="@color/telf"
-                        android:id="@+id/telf2"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/estrellagambeta"
-                        android:layout_gravity="center|center_horizontal"
+                        android:src="@drawable/tiempovoces"
                         ></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Después de sufrir una tragedia en la casa que está arreglando, Daniel oye una fantasmal llamada de socorro y contrata a un experto en asuntos paranormales."
+                        android:textSize="17dp"
+                        android:textColor="@color/negro"
+                        ></TextView>
+
                 </LinearLayout>
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -186,13 +159,14 @@ tools:context=".restauranteMarisco">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="275dp"
-                    android:src="@drawable/laparadeta">
+                    android:src="@drawable/elapostol"
+                    android:id="@+id/peli3">
                 </ImageView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="La Paradeta"
+                    android:text="El apóstol"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/negro"
@@ -200,40 +174,26 @@ tools:context=".restauranteMarisco">
                     android:gravity="center"
                     ></TextView>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|right"
                     >
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/web"
-                        android:id="@+id/url3"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/ubicacion"
-                        android:id="@+id/ubi3"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/telefono"
-                        android:background="@color/telf"
-                        android:id="@+id/telf3"
-                        android:layout_marginRight="15dp"
-                        ></ImageView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/estrellalaparadeta"
-                        android:layout_gravity="center|center_horizontal"
+                        android:src="@drawable/tiempoelapostol"
                         ></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Corre el año 1905 y un hombre, desahuciado por la sociedad, tiene por misión rescatar a su hermana secuestrada por una siniestra secta relogiosa en una aterradora isla."
+                        android:textSize="17dp"
+                        android:textColor="@color/negro"
+                        ></TextView>
+
                 </LinearLayout>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class restauranteItaliano extends AppCompatActivity implements View.OnClickListener {
-    ImageView telf1,telf2,telf3,url1,url2,url3;
+    ImageView telf1,telf2,telf3,url1,url2,url3,ubi1,ubi2,ubi3;
     FloatingActionButton top;
     View scrollView;
     @Override
@@ -31,6 +31,12 @@ public class restauranteItaliano extends AppCompatActivity implements View.OnCli
         telf2.setOnClickListener(this);
         telf3 = findViewById(R.id.telf3);
         telf3.setOnClickListener(this);
+        ubi1 = findViewById(R.id.ubi1);
+        ubi1.setOnClickListener(this);
+        ubi2 = findViewById(R.id.ubi2);
+        ubi2.setOnClickListener(this);
+        ubi3 = findViewById(R.id.ubi3);
+        ubi3.setOnClickListener(this);
         top = findViewById(R.id.top);
         top.setOnClickListener(this);
     }
@@ -79,6 +85,27 @@ public class restauranteItaliano extends AppCompatActivity implements View.OnCli
         {
             Intent i31 = new Intent(Intent.ACTION_DIAL, Uri.parse("Tel: 931 15 02 75"));
             startActivity(i31);
+        }
+        else if(img == ubi1)
+        {
+            String url = "https://goo.gl/maps/NR52kUsc7t4mGpQ49";
+            Intent i12 = new Intent(Intent.ACTION_VIEW);
+            i12.setData(Uri.parse(url));
+            startActivity(i12);
+        }
+        else if(img == ubi2)
+        {
+            String url = "https://goo.gl/maps/EiHKFeb7UQTXz4p78";
+            Intent i22 = new Intent(Intent.ACTION_VIEW);
+            i22.setData(Uri.parse(url));
+            startActivity(i22);
+        }
+        else if(img == ubi3)
+        {
+            String url = "https://goo.gl/maps/9hXqD1ZdJwmXUm8u8";
+            Intent i32 = new Intent(Intent.ACTION_VIEW);
+            i32.setData(Uri.parse(url));
+            startActivity(i32);
         }
     }
 }
