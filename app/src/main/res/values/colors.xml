@@ -9,4 +9,5 @@
     <color name="buttontop">#00000000</color>
     <color name="telf">#4CAF50</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="seccionFondo">#FFFFFF</color>
 </resources>

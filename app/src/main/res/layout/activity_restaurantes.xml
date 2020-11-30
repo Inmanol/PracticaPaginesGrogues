@@ -34,6 +34,7 @@
             app:cardElevation="10dp"
             android:layout_row="0"
             android:layout_column="0"
+            app:cardBackgroundColor="@color/seccionFondo"
             >
             <LinearLayout
                 android:layout_width="match_parent"
