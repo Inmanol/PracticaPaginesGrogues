@@ -14,8 +14,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class restauranteCarne extends AppCompatActivity implements View.OnClickListener {
     ImageView telf1,telf2,telf3,url1,url2,url3,ubi1,ubi2,ubi3;
-    FloatingActionButton top;
-    View scrollView;
+    //FloatingActionButton top;
+    //View scrollView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,20 +39,20 @@ public class restauranteCarne extends AppCompatActivity implements View.OnClickL
         ubi2.setOnClickListener(this);
         ubi3 = findViewById(R.id.ubi3);
         ubi3.setOnClickListener(this);
-        top = findViewById(R.id.top);
-        top.setOnClickListener(this);
+        //top = findViewById(R.id.top);
+        //top.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         ImageView img = (ImageView) v;
-        FloatingActionButton fab = (FloatingActionButton) v;
+        //FloatingActionButton fab = (FloatingActionButton) v;
 
-        if(fab == top)
+        /*if(fab == top)
         {
             scrollView.setScrollY(0);
         }
-        else if (img == url1)
+        else */if (img == url1)
         {
             String url = "https://elcellerdejabugo.com/";
             Intent i = new Intent(Intent.ACTION_VIEW);
